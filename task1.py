@@ -52,7 +52,6 @@ class CountryCapitalDictionary:
 if __name__ == "__main__":
     db = CountryCapitalDictionary()
     
-    # Загрузка данных (если файл существует)
     db.load()
     
     while True:
@@ -85,7 +84,7 @@ if __name__ == "__main__":
         elif choice == '6':
             db.save()
         elif choice == '7':
-            db.save()  # Автосохранение при выходе
+            db.save()
             break
         else:
             print("Неверный ввод. Попробуйте снова.")
